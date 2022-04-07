@@ -1,7 +1,7 @@
 # Face-Recognition-Using-Eigenfaces
-# Description
+## Description
 * PCA and LDA are implemented to perform dimensionality reduction on the dataset and K-NN classifier is used for classification
-# Principal Component Analysis
+### Principal Component Analysis
 1. Data is split into training set and test set with 50-50% split
 2. Every image is converted into a vector 
 3. Preprocessing is performed on the training set by performing Mean Normalization to center the data and scale it to prevent the principal components to be skewed towards a certain feature
@@ -9,7 +9,7 @@
 5. The first K eignevectors are chosen to retain 90% of the total variance and used as the projection matrix
 6. The training set is projected to the lower dimensional space and used to train the K-NN classifier
 7. The test set is then projected on the lower dimensional space and used to report accuracy of the classifier
-# Linear Discriminant Analysis
+### Linear Discriminant Analysis
 * As LDA fails to find the lower dimensional space if the dimensions
 are much higher than the number of samples in the data matrix. Thus, the
 within-class matrix becomes singular, which is known as the small sample
@@ -26,3 +26,6 @@ avoid over-fitting.
 9. The first 39 eignevectors are chosen to used as the projection matrix
 10. The training set is projected to the lower dimensional space and used to train the K-NN classifier
 11. The test set is then projected on the lower dimensional space and used to report accuracy of the classifier
+
+### Problem Statment:
+[PR-Assignment-1.pdf](https://github.com/yosrri/Face-Recogntion/files/8443399/PR-Assignment-1.pdf)
